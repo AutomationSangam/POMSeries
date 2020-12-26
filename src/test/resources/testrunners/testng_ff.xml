@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OpenCart Test automtion regression suite"  parallel="tests" thread-count="3">
+	
+	
+	 <listeners>
+		<listener class-name="com.qa.opencart.testlisteners.ExtentReportListener" />
+		<listener class-name="com.qa.opencart.testlisteners.TestAllureListener" />
+	</listeners>
+
+	<test name="LoginPage Test_ff_57">
+	<parameter name="browser" value="firefox" />
+	<parameter name="version" value="57.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="LoginPage Test_ff_83">
+	<parameter name="browser" value="firefox" />
+	<parameter name="version" value="83.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="AccountsPage Test_ff_80">
+	<parameter name="browser" value="firefox" />
+	<parameter name="version" value="80.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.AccountsPageTest" />
+		</classes>
+	</test>
+	
+	<test name="ProductInfoPage Test_ff_83">
+	<parameter name="browser" value="firefox" />
+	<parameter name="version" value="83.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.ProductInfoTest" />
+		</classes>
+	</test>
+
+
+
+</suite>
